@@ -50,13 +50,8 @@ public class LinkedList {
     }
 
     public boolean contains(int element) {
-        var current = first;
-
-        while (current != null) {
-            if (current.value == element)
-                return true;
-            current = current.next;
-        }
+        if (indexOf(element) != -1)
+            return true;
         return false;
     }
 
